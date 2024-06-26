@@ -1,0 +1,9 @@
+subgraphs:
+  id:
+    routing_url: http://localhost:3001/graphql
+    schema:
+      subgraph_url: http://localhost:3001/graphql
+  ums:
+    routing_url: http://localhost:3003/graphql
+    schema:
+      subgraph_url: http://localhost:3003/graphql
