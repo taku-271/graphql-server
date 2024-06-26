@@ -1,0 +1,19 @@
+{
+  "name": "interface",
+  "version": "1.0.0",
+  "scripts": {
+    "generate:supergraph": "ts-node lib/env-to-yaml.ts && rover supergraph compose --config supergraph.yaml --output ./src/supergraph.graphql",
+    "codegen": "graphql-codegen --watch"
+  },
+  "dependencies": {
+    "@apollo/rover": "^0.23.0",
+    "@graphql-codegen/cli": "^5.0.2",
+    "@graphql-codegen/typescript": "^4.0.7",
+    "@graphql-codegen/typescript-graphql-request": "^6.2.0",
+    "@graphql-codegen/typescript-operations": "^4.2.1",
+    "@parcel/watcher": "^2.4.1",
+    "fs": "^0.0.1-security",
+    "js-yaml": "^4.1.0",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,10 @@
+query getExpensesByEmail($email: String!) {
+  getUserByEmail(email: $email) {
+    expenses {
+      id
+      title
+      amount
+      usedAt
+    }
+  }
+}
